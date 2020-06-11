@@ -202,6 +202,8 @@ class CreateQuestionController extends Controller
         $newOption->option_answered = 0;
         $newOption->save();
 
+        dd($amountOptions);
+
         if ( $amountOptions === 3) {
             $newOption = new Option;
             $newOption->question_id = $qid;
