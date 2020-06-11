@@ -15,7 +15,7 @@
         <p>For the purposes of these Terms and Conditions:</p>
         <ul>
             <li>
-            <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Squary.</p>
+            <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Squery.</p>
             </li>
             <li>
             <p><strong>Country</strong> refers to:  Belgium</p>
@@ -33,7 +33,7 @@
             <p><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</p>
             </li>
             <li>
-            <p><strong>Website</strong> refers to Squary, accessible from <a href="https://www.squary.com" rel="external nofollow noopener" target="_blank">https://www.squary.com</a></p>
+            <p><strong>Website</strong> refers to Squery, accessible from <a href="https://bp-api.1819.lennertslabbinck.nxtmediatech.eu/" rel="external nofollow noopener" target="_blank">https://bp-api.1819.lennertslabbinck.nxtmediatech.eu/</a></p>
             </li>
             <li>
             <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
