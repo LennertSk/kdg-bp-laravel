@@ -1,0 +1,167 @@
+.form {
+    width: 100%;
+    &__label {
+        font-size: .8rem;
+        font-weight: 600;
+        width: 100%;
+    }
+    &__input--text,
+    &__input--textarea,
+    &__input--password {
+        box-sizing: border-box;
+        width: 100%;
+        padding: .5rem;
+        border: none;
+        border-bottom: 2px solid #DBDBDC;
+        margin: 1rem 0 2rem 0;
+        font-size: .9rem;
+        font-family: $body-font;
+        font-weight: 600;
+        transition: border .2s ease-out;
+        &:focus {
+            border-bottom: 2px solid #0D2E54;
+            outline: none;
+            font-size: 1rem;
+        }
+    }
+    &__input--textarea {
+        height: auto;
+    }
+    &__input--password {
+        margin-bottom: 1rem;
+    }
+    &__subtext {
+        font-style: italic;
+        font-size: .9rem;
+        margin-bottom: 2rem;
+    }
+    &__error {
+        color: $highlight-red;
+        font-style: italic;
+        font-size: .9rem;
+        margin-bottom: 2rem;
+    }
+    &__input--show {
+        margin-bottom: 3rem;
+    }
+    &__submit {
+        padding: 1rem 3rem;
+        background: $dark-grey;
+        color: #fff;
+        font-weight: 600;
+        margin: 1rem 0 2rem 0;
+        border: none;
+        transition: opacity .2s ease-in-out;
+        &:hover {
+            opacity: .9;
+        }
+    }
+    #code {
+        margin: 1rem 0 .5rem 0;
+    }
+    #code-output {
+        font-weight: 600;
+    }
+    .is-invalid {
+        border-bottom: 2px solid $highlight-red;
+        margin: 1rem 0 .5rem 0;
+    }
+    .checkbox {
+        margin: 0 0 2rem 0;
+    }
+    #option-c {
+        display: none;
+    }
+}
+
+.step-1 {
+    .svg {
+        height: 50vh;
+        width: 100%;
+        text-align: center;
+        img {
+            margin: auto;
+            min-width: 80%;
+        }
+    }
+    .svg-bottom {
+        display: none;
+    }
+
+}
+
+
+.step-2 {
+    .options {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem 0 3rem 0;
+        margin-block-start: 0;
+        padding-inline-start: 0;
+        .option {
+            background: $dark-grey;
+            padding: 1rem;
+            margin: .5rem 0;
+            width: 100%;
+            height: 3rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &__text {
+                width: 80%;
+                color: #fff;
+                margin-left: 1.5rem;
+            }
+            &__icon {
+                border: 1px solid red;
+                height: 2rem;
+                width: 2rem;
+                padding: .5rem;
+                border: 2px solid #fff;
+                border-radius: 50%;
+            }
+            &:hover {
+                opacity: .9;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .step-1 {
+        display: flex;
+        .svg, .form {
+            flex: 1;
+            margin-top: 3rem;
+        }
+        .svg {
+            width: 40%;
+        }
+        .svg-top {
+            display: none;
+        }
+        .svg-bottom {
+            display: block;
+        }
+        .form {
+            width: 50%;
+            padding: 1rem 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.1);
+            border: 1px solid $light-grey;
+            border-radius: .7rem;
+        }        
+    }
+
+    .step-2 {
+        height: 85vh;
+        .options {
+            .option {
+                margin: 1rem 2rem 1rem 0;
+                flex: 1;
+            }
+        }
+    }
+
+}

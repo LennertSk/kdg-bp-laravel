@@ -1,0 +1,31 @@
+// 1. Colors
+// -----------
+
+$dark-grey: #112730;
+$dark-blue: #0D2E54;
+$darker-blue: $dark-grey;
+$light-grey: #F4F4F4;
+$sand-yellow: #F5E6B3;
+// $highlight-blue: #247bff;
+$highlight-red: #eb452f;
+$highlight-green: #009E51;
+// $light-green: #BDD8C5;
+// $light-orange: #f98862;
+
+
+// 2. Fonts
+// -----------
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
+
+$body-font: 'Open Sans', Helvetica, Arial, sans-serif;
+$body-font-size: 16px;
+
+$title-font: 'Josefin Sans', sans-serif;
+
+// 3. Breakpoints
+// -----------
+$breakpoint-phone: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-large: 1200px;

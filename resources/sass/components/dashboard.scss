@@ -1,0 +1,122 @@
+.dashboard {
+    display: none;
+}
+.container {
+    .dashboard-header {
+        background: $sand-yellow;
+        padding-top: 3rem;
+        .title{
+            margin-block-start: 0;
+            padding-inline-start: 0;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 4rem;
+        }
+        .code {
+            position: relative;
+            border: 1px solid $dark-grey;
+            p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #fff;
+            margin: auto;
+            width: 70%;
+            border: 2px solid $dark-grey;
+            padding: .5rem;
+            text-align: center; 
+            }
+        }
+
+    }    
+    .dashboard-questions {
+        &__title {
+            margin: 2rem 0 1rem 0;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 600px;
+        }
+        .questions {
+            padding: 0 0 3rem 0;
+            list-style: none;
+            margin-block-start: 0;
+            padding-inline-start: 0;
+            .question {
+                background: $dark-grey;
+                margin: 1rem 0;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    display: block;
+                    padding: 1rem;
+                    width: auto;
+                    height: 100%;
+                    height: auto;
+                    color: #fff;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .question--add {
+                margin: 2rem 0 0 0;
+                border: 2px solid transparent;
+                background: $highlight-green;
+                a {
+                    color: #fff;
+                }
+                &:hover {
+                    background: #fff;
+                    border: 2px solid $highlight-green;
+                    a {
+                        color: $highlight-green;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+@media (min-width: 768px) {       
+    .container {
+        .dashboard-header {
+            .code {
+                p {
+                    max-width: 50%;
+                }
+            }
+        }
+        .dashboard-questions {
+            .questions {
+                display: flex;
+                flex-wrap: wrap;
+
+                justify-content: center;
+                .question {
+                    flex-flow: column wrap; 
+                    margin: 1rem;
+                    height: 100%;
+                    
+                    width: 25rem;
+                    a {
+                        min-height: 4rem;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {    
+    .container {
+        .dashboard-header {
+            .code {
+                p {
+                    max-width: 35%;
+                }
+            }
+        }
+    }   
+}

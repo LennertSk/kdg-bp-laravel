@@ -1,0 +1,97 @@
+.wrapper-howto {
+    background: #F5E6B3;
+    .howto {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+        list-style: none;
+        margin-block-start: 0;
+        padding-inline-start: 0;
+        &__item {
+            height: auto;
+            width: 100%;
+            position: relative;
+            border-bottom: 2px solid $dark-grey;
+            .item {
+                width: 70%;
+                margin: auto;
+                padding-top: 2rem;
+                text-align: center;
+                &__nbr {
+                    font-family: $title-font;
+                    font-size: 1.5rem;
+                }
+                &__title {
+                    font-family: $title-font;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                }
+                &__subtitle {
+                    padding: 0 2rem 0 0;
+                }
+            }
+            .item-standout {
+                .divider {
+                    display: none;
+                }
+                .item__subtitle {
+                    padding: 1rem 0;
+                }
+            }
+        }
+        &__item:last-child {
+            border: none;
+        }
+    }
+}
+
+
+.item-bg {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 10%);
+    width: 100%;
+    height: 15rem;
+    background: #112730;
+    z-index: 200;
+    color: #fff;
+    .nbr {
+        padding: 1rem 0 0 0;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .wrapper-howto {
+        .howto {
+            width: 70%;
+            flex-wrap: nowrap;
+            &__item {
+                height: 15rem;
+                border: none;
+                .item {
+                    text-align: left;
+                }
+                .item-standout {
+                    padding: 0;
+                    position: absolute;
+                    bottom: 0;
+                    background: $darker-blue;
+                    color: #fff;
+                    width: 100%;
+                    .item__nbr, .item__title, .item__subtitle, .divider {
+                        margin: 2rem;
+                    }
+                    .divider {
+                        display: block;
+                        height: 2px;
+                        background: #fff;
+                        width: 5rem;
+                    }
+                }
+            }
+        }   
+    }
+}
