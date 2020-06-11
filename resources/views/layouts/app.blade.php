@@ -47,7 +47,7 @@
         <!-- Footer -->
         <footer class='footer'>
             <ul class='wrapper'>
-                <li><a href='{{ url("/terms") }}' class='btn-dash'>Privacy</a></li>
+                <li><a href='{{ url("/privacy") }}' class='btn-dash'>Privacy</a></li>
                 <li><a href='{{ url("/terms") }}' class='btn-dash'>Terms of use</a></li>
             </ul>
         </footer>

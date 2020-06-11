@@ -40,3 +40,4 @@ Route::post('/add-question/post/select', 'CreateQuestionController@addSelect');
 Route::post('/add-question/post/range', 'CreateQuestionController@addRange');
 
 Route::view('/terms', 'terms');
+Route::view('/privacy', 'privacy');

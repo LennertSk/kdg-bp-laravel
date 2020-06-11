@@ -81,15 +81,15 @@ class CreateQuestionController extends Controller
     {
         $userInput = $request->validate(
             [
-            'answer' => 'required|min:4|max:150',
-            'tip' => 'nullable|min:4|max:150'
+            'answer' => 'required|min:4|max:250',
+            'tip' => 'nullable|min:4|max:250'
             ],
             [
             'answer.min' => 'The :attribute should have at least 4 characters',
-            'answer.max' => 'The :attribute should not be longer than 50 characters',
+            'answer.max' => 'The :attribute should not be longer than 250 characters',
             'answer.required' => 'The :attribute can not be blank.',
             'tip.min' => 'The :attribute should have at least 4 characters',
-            'tip.max' => 'The :attribute should not be longer than 50 characters',
+            'tip.max' => 'The :attribute should not be longer than 250 characters',
             'tip.required' => 'The :attribute can not be blank.',
             ]
         );
