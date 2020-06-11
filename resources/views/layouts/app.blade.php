@@ -6,6 +6,8 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="description" content="Simple Survey Builder">
+    <meta name="keywords" content="Squery, Survey, Builder, Generator, Quiz">
 
     <title>Squery | Simple Survey Builder</title>
 

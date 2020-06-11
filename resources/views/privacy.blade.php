@@ -8,7 +8,7 @@
       <div class='terms-of-service'>
       <h1>Privacy Policy for Squery</h1>
 
-<p>At Squery, accessible from https://bp-api.1819.lennertslabbinck.nxtmediatech.eu/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by SquerySquary and how we use it.</p>
+<p>At Squery, accessible from https://bp-api.1819.lennertslabbinck.nxtmediatech.eu/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Squery and how we use it.</p>
 
 <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
 
