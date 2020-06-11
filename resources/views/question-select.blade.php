@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class='wrapper step-1'>
-        <form method='POST' class='form' action='{{ url("/add-question/final") }}'>
+        <form method='POST' class='form' action='{{ url("/add-question/post/select") }}'>
         <h1>Add the possible options.</h1> 
             @csrf
 

@@ -19,6 +19,7 @@ class CreateAllTables extends Migration
             $table->string('survey_name');
             $table->string('description')->nullable();
             $table->string('created_by');
+            $table->string('password');
             $table->string('survey_code')->unique();
             $table->integer('rating')->nullable();
             $table->integer('amount_rated')->nullable();
@@ -33,7 +34,6 @@ class CreateAllTables extends Migration
             $table->string('question');
             $table->string('url');
             $table->string('type');
-            $table->text('text_info')->nullable();
             $table->text('text_hint')->nullable();
             $table->text('text_answer')->nullable();
             $table->text('text_wrong')->nullable();
