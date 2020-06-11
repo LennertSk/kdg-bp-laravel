@@ -37,6 +37,7 @@ class CreateAllTables extends Migration
             $table->text('text_hint')->nullable();
             $table->text('text_answer')->nullable();
             $table->text('text_wrong')->nullable();
+            $table->timestamps();
         });
 
         Schema::create('options', function (Blueprint $table) {
@@ -44,6 +45,7 @@ class CreateAllTables extends Migration
             $table->integer('question_id');
             $table->string('option');
             $table->integer('option_answered')->default('0');
+            $table->timestamps();
         });
 
     }
