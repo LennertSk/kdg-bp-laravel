@@ -19335,8 +19335,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Documents\KdG\bachelorproef\kdg-bp\bachelorproef-api\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\Documents\KdG\bachelorproef\kdg-bp\bachelorproef-api\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\Documents\KdG\bachelorproef\bachelorproef-api\kdg-bp-laravel\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\Documents\KdG\bachelorproef\bachelorproef-api\kdg-bp-laravel\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
