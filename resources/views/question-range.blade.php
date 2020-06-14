@@ -21,8 +21,8 @@
                 <div class='form__error'>{{ $message }}</div>
             @enderror
 
-            <label for="quantity"class='form__label'>Amount of options (between 2 and 10).</label>
-            <input type="number" id="quantity" value='2' name="quantity" min="2" max="10" class="form__input--text" onchange='showOptions()'>
+            <label for="quantity"class='form__label'>Amount of options (between 3 and 10).</label>
+            <input type="number" id="quantity" value='3' name="quantity" min="3" max="10" class="form__input--text" onchange='showOptions()'>
 
             <div id='option-A'>
                 <label for="optionA" class='form__label toggle-answer'>Option 1.</label>
