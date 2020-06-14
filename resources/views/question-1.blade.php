@@ -16,7 +16,7 @@
                 <div class='form__error'>{{ $message }}</div>
             @enderror
 
-            <label for="url" class='form__label'>Summarize your question in a couple short words.</label>
+            <label for="url" class='form__label'>Summarize your question in 1 to 3 words. This will be used as a url so keep it short and simple.</label>
             <input id="url" name='userUrl' type="text" class="form__input--text @error('url') is-invalid @enderror" onchange='getUrlOutput()'>
             <p class='form__subtext'>This question url will be: <span id='url-output'>...</span></p>
             <input type='text' id='url-input' name='url' hidden>

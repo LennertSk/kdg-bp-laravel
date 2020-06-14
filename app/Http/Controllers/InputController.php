@@ -34,7 +34,7 @@ class InputController extends Controller
         $userInput = $request->validate([
             'title' => 'required|min:4|max:50',
             'code' => 'required|min:4|max:30|unique:surveys,survey_code',
-            'description' => 'required|max:255',
+            'description' => 'required|max:150',
             'username' => 'required|min:4',
             'password' => 'required|min:4|max:30'
             ],[
@@ -46,7 +46,7 @@ class InputController extends Controller
                 'code.max' => 'Your :attribute needs to be less than 30 characters long.',
                 'code.unique' => 'That code has already been taken.',
                 'description.required' => 'The :attribute can not be blank.',
-                'description.max' => 'The :attribute needs to be less than 255 characters long.',
+                'description.max' => 'The :attribute needs to be less than 150 characters long.',
                 'username.required' => 'Your :attribute can not be blank.',
                 'username.min' => 'Your :attribute needs to be at least 4 characters long.',
                 'password.required' => 'The :attribute can not be blank.'

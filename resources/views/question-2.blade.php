@@ -13,7 +13,7 @@
                 <div class='form__error'>{{ $message }}</div>
             @enderror
 
-            <label for="tip" class='form__label'>Adding unlockable tips can help give the user more information about your subject.</label>
+            <label for="tip" class='form__label'>Adding unlockable tips can help give the user more information about your subject. (optional)</label>
             <input id="tip" name='tip' type="text" class="form__input--text @error('tip') is-invalid @enderror">
             @error('tip')
                 <div class='form__error'>{{ $message }}</div>

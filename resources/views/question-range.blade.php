@@ -40,7 +40,7 @@
                 <div class='form__error'>{{ $message }}</div>
             @enderror
 
-            <div id='option-C'>
+            <div id='option-C' class='toggle-viz'>
                 <label for="optionC" class='form__label toggle-answer'>Option 3.</label>
                 <input id="optionC" name='optionC' type="text" class="form__input--text @error('optionC') is-invalid @enderror">
             </div>
@@ -48,7 +48,7 @@
                 <div class='form__error'>{{ $message }}</div>
             @enderror
 
-            <div id='option-D'>
+            <div id='option-D' class='toggle-viz'>
                 <label for="optionD" class='form__label toggle-answer'>Option 4.</label>
                 <input id="optionD" name='optionD' type="text" class="form__input--text @error('optionD') is-invalid @enderror">
             </div>
@@ -56,7 +56,7 @@
                 <div class='form__error'>{{ $message }}</div>
             @enderror
 
-            <div id='option-E'>
+            <div id='option-E' class='toggle-viz'>
                 <label for="optionE" class='form__label toggle-answer'>Option 5.</label>
                 <input id="optionE" name='optionE' type="text" class="form__input--text @error('optionE') is-invalid @enderror">
             </div>
@@ -64,7 +64,7 @@
                 <div class='form__error'>{{ $message }}</div>
             @enderror
 
-            <div id='option-F'>
+            <div id='option-F' class='toggle-viz'>
                 <label for="optionF" class='form__label toggle-answer'>Option 6.</label>
                 <input id="optionF" name='optionF' type="text" class="form__input--text @error('optionF') is-invalid @enderror">
             </div>
@@ -72,7 +72,7 @@
                 <div class='form__error'>{{ $message }}</div>
             @enderror
 
-            <div id='option-G'>
+            <div id='option-G' class='toggle-viz'>
                 <label for="optionG" class='form__label toggle-answer'>Option 7.</label>
                 <input id="optionG" name='optionG' type="text" class="form__input--text @error('optionG') is-invalid @enderror">
             </div>
@@ -80,7 +80,7 @@
                 <div class='form__error'>{{ $message }}</div>
             @enderror
 
-            <div id='option-H'>
+            <div id='option-H' class='toggle-viz'>
                 <label for="optionH" class='form__label toggle-answer'>Option 8.</label>
                 <input id="optionH" name='optionH' type="text" class="form__input--text @error('optionH') is-invalid @enderror">
             </div>
@@ -88,7 +88,7 @@
                 <div class='form__error'>{{ $message }}</div>
             @enderror
 
-            <div id='option-I'>
+            <div id='option-I' class='toggle-viz'>
                 <label for="optionI" class='form__label toggle-answer'>Option 9.</label>
                 <input id="optionI" name='optionI' type="text" class="form__input--text @error('optionI') is-invalid @enderror">
             </div>
@@ -96,7 +96,7 @@
                 <div class='form__error'>{{ $message }}</div>
             @enderror
 
-            <div id='option-J'>
+            <div id='option-J' class='toggle-viz'>
                 <label for="optionJ" class='form__label toggle-answer'>Option 10.</label>
                 <input id="optionJ" name='optionJ' type="text" class="form__input--text @error('optionJ') is-invalid @enderror">
             </div>

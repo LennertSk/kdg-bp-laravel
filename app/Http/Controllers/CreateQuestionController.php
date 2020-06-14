@@ -90,7 +90,6 @@ class CreateQuestionController extends Controller
             'answer.required' => 'The :attribute can not be blank.',
             'tip.min' => 'The :attribute should have at least 4 characters',
             'tip.max' => 'The :attribute should not be longer than 250 characters',
-            'tip.required' => 'The :attribute can not be blank.',
             ]
         );
         
@@ -135,18 +134,18 @@ class CreateQuestionController extends Controller
         if ($hasNoAnswer) {
             $input = $request->validate(
                 [
-                    'optionA' => 'required|min:3|max:150',
-                    'optionB' => 'required|min:3|max:150',
-                    'optionC' => 'nullable|min:3|max:150'
+                    'optionA' => 'required|min:1|max:150',
+                    'optionB' => 'required|min:1|max:150',
+                    'optionC' => 'nullable|min:1|max:150'
                 ]
                 );
         } else {
             $input = $request->validate(
                 [
                     'answerWrong' => 'required|min:3|max:150',
-                    'optionA' => 'required|min:3|max:150',
-                    'optionB' => 'required|min:3|max:150',
-                    'optionC' => 'nullable|min:3|max:150',
+                    'optionA' => 'required|min:1|max:150',
+                    'optionB' => 'required|min:1|max:150',
+                    'optionC' => 'nullable|min:1|max:150',
                     'correct' => 'required'
                 ]
                 );
@@ -202,8 +201,6 @@ class CreateQuestionController extends Controller
         $newOption->option_answered = 0;
         $newOption->save();
 
-        
-
         if ( $amountOptions == 3) {
             $newOption = new Option;
             $newOption->question_id = $qid;
@@ -250,32 +247,32 @@ class CreateQuestionController extends Controller
         if ($hasNoAnswer) {
             $input = $request->validate(
                 [
-                    'optionA' => 'required|min:3|max:150',
-                    'optionB' => 'required|min:3|max:150',
-                    'optionC' => 'nullable|min:3|max:150',
-                    'optionD' => 'nullable|min:3|max:150',
-                    'optionE' => 'nullable|min:3|max:150',
-                    'optionF' => 'nullable|min:3|max:150',
-                    'optionG' => 'nullable|min:3|max:150',
-                    'optionH' => 'nullable|min:3|max:150',
-                    'optionI' => 'nullable|min:3|max:150',
-                    'optionJ' => 'nullable|min:3|max:150'
+                    'optionA' => 'required|min:1|max:150',
+                    'optionB' => 'required|min:1|max:150',
+                    'optionC' => 'nullable|min:1|max:150',
+                    'optionD' => 'nullable|min:1|max:150',
+                    'optionE' => 'nullable|min:1|max:150',
+                    'optionF' => 'nullable|min:1|max:150',
+                    'optionG' => 'nullable|min:1|max:150',
+                    'optionH' => 'nullable|min:1|max:150',
+                    'optionI' => 'nullable|min:1|max:150',
+                    'optionJ' => 'nullable|min:1|max:150'
                 ]
                 );
         } else {
             $input = $request->validate(
                 [
                     'answerWrong' => 'required|min:3|max:150',
-                    'optionA' => 'required|min:3|max:150',
-                    'optionB' => 'required|min:3|max:150',
-                    'optionC' => 'nullable|min:3|max:150',
-                    'optionD' => 'nullable|min:3|max:150',
-                    'optionE' => 'nullable|min:3|max:150',
-                    'optionF' => 'nullable|min:3|max:150',
-                    'optionG' => 'nullable|min:3|max:150',
-                    'optionH' => 'nullable|min:3|max:150',
-                    'optionI' => 'nullable|min:3|max:150',
-                    'optionJ' => 'nullable|min:3|max:150',
+                    'optionA' => 'required|min:1|max:150',
+                    'optionB' => 'required|min:1|max:150',
+                    'optionC' => 'nullable|min:1|max:150',
+                    'optionD' => 'nullable|min:1|max:150',
+                    'optionE' => 'nullable|min:1|max:150',
+                    'optionF' => 'nullable|min:1|max:150',
+                    'optionG' => 'nullable|min:1|max:150',
+                    'optionH' => 'nullable|min:1|max:150',
+                    'optionI' => 'nullable|min:1|max:150',
+                    'optionJ' => 'nullable|min:1|max:150',
                     'correct' => 'required'
                 ]
                 );

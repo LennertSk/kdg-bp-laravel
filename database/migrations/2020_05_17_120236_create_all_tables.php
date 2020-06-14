@@ -13,7 +13,6 @@ class CreateAllTables extends Migration
      */
     public function up()
     {
-
         Schema::create('surveys', function (Blueprint $table) {
             $table->increments('survey_id')->unique();
             $table->string('survey_name');
