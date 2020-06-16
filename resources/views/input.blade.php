@@ -9,21 +9,21 @@
     <h1>Let's get started.</h1>
         @csrf
 
-        <label for="title" class='form__label'>First off, we need to give it a name</label>
+        <label for="title" class='form__label'>First off, give your survey a title.</label>
         <input id="title" name='title' type="text" value="{{old('title')}}" class="form__input--text @error('title') is-invalid @enderror">
         @error('title')
             <div class='form__error'>{{ $message }}</div>
         @enderror
 
-        <label for="code" class='form__label'>People will find you by entering the following code so make sure it's clear and simple to remember</label>
+        <label for="code" class='form__label'>People will find you by entering the following code so make sure it's clear and simple to remember.</label>
         <input id="code" name='userCode' type="text" value="{{old('userCode')}}" class="form__input--text @error('code') is-invalid @enderror" onchange='getCodeOutput()'>
         <p class='form__subtext'>Your code will be: <span id='code-output'>...</span></p>
-        <input type='text' id='code-input' name='code' hidden>
+        <input type='text' id='code-input' name='code' value="{{old('code')}}" hidden>
         @error('code')
             <div class='form__error'>{{ $message }}</div>
         @enderror
 
-        <label for="description" class='form__label'>Add a description</label>
+        <label for="description" class='form__label'>Add a description.</label>
         <input id="description" name='description' value="{{old('description')}}" type="text" class="form__input--textarea @error('description') is-invalid @enderror">
         @error('description')
             <div class='form__error'>{{ $message }}</div>
