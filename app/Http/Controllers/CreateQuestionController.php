@@ -213,7 +213,6 @@ class CreateQuestionController extends Controller
         * If question has answer,
         * Get correct option back from db so we can update question with correct option id (oid)
         */
-
         if (!$hasNoAnswer) {
 
             if ($correct_oid == 1) {
@@ -226,7 +225,7 @@ class CreateQuestionController extends Controller
             
             $oid = $correctOption['option_id'];
 
-            Question::where('survey_id', '=', $survey['survey_id'])
+            Question::where('question_id', '=', $qid)
                 ->update(['option_id' => $oid]);
         }
         return redirect('/dashboard');
@@ -420,7 +419,7 @@ class CreateQuestionController extends Controller
             
             $oid = $correctOption['option_id'];
 
-            Question::where('survey_id', '=', $survey['survey_id'])
+            Question::where('question_id', '=', $qid)
                 ->update(['option_id' => $oid]);
         }
         return redirect('/dashboard');

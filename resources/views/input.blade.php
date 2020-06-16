@@ -58,6 +58,7 @@
     function getCodeOutput() {
         var str = document.getElementById("code").value
         str = str.replace(/\s+/g, '-').toLowerCase()
+        str = str.replace(/[&\/\\#, +()$~%.'":*?<>{},.!?;:'-]/g, '')
         document.getElementById('code-output').textContent = str
         document.getElementById('code-input').value = str
     }
