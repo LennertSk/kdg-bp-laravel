@@ -11,15 +11,15 @@
             @csrf
 
             <label for="question" class='form__label'>What would you like to ask?</label>
-            <input id="question" name='question' type="text" class="form__input--text @error('question') is-invalid @enderror">
+            <input id="question" name='question' type="text" value="{{old('question')}}" class="form__input--text @error('question') is-invalid @enderror">
             @error('question')
                 <div class='form__error'>{{ $message }}</div>
             @enderror
 
             <label for="url" class='form__label'>Summarize your question in 1 to 3 words. This will be used as a url so keep it short and simple.</label>
-            <input id="url" name='userUrl' type="text" class="form__input--text @error('url') is-invalid @enderror" onchange='getUrlOutput()'>
+            <input id="url" name='userUrl' type="text" value="{{old('userUrl')}}" class="form__input--text @error('url') is-invalid @enderror" onchange='getUrlOutput()'>
             <p class='form__subtext'>This question url will be: <span id='url-output'>...</span></p>
-            <input type='text' id='url-input' name='url' hidden>
+            <input type='text' id='url-input' name='url' hidden value="{{old('userUrl')}}">
             @error('url')
                 <div class='form__error'>{{ $message }}</div>
             @enderror

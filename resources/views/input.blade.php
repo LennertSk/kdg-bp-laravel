@@ -10,13 +10,13 @@
         @csrf
 
         <label for="title" class='form__label'>First off, we need to give it a name</label>
-        <input id="title" name='title' type="text" class="form__input--text @error('title') is-invalid @enderror">
+        <input id="title" name='title' type="text" value="{{old('title')}}" class="form__input--text @error('title') is-invalid @enderror">
         @error('title')
             <div class='form__error'>{{ $message }}</div>
         @enderror
 
         <label for="code" class='form__label'>People will find you by entering the following code so make sure it's clear and simple to remember</label>
-        <input id="code" name='userCode' type="text" class="form__input--text @error('code') is-invalid @enderror" onchange='getCodeOutput()'>
+        <input id="code" name='userCode' type="text" value="{{old('userCode')}}" class="form__input--text @error('code') is-invalid @enderror" onchange='getCodeOutput()'>
         <p class='form__subtext'>Your code will be: <span id='code-output'>...</span></p>
         <input type='text' id='code-input' name='code' hidden>
         @error('code')
@@ -24,19 +24,19 @@
         @enderror
 
         <label for="description" class='form__label'>Add a description</label>
-        <textarea id="description" name='description' type="text" class="form__input--textarea @error('description') is-invalid @enderror"></textarea>
+        <input id="description" name='description' value="{{old('description')}}" type="text" class="form__input--textarea @error('description') is-invalid @enderror">
         @error('description')
             <div class='form__error'>{{ $message }}</div>
         @enderror
 
         <label for="username" class='form__label'>What should we call you?</label>
-        <input id="username" name='username' type="text" class="form__input--text @error('username') is-invalid @enderror">
+        <input id="username" name='username' type="text" value="{{old('username')}}" class="form__input--text @error('username') is-invalid @enderror">
         @error('username')
             <div class='form__error'>{{ $message }}</div>
         @enderror
 
         <label for="password" class='form__label'>Secure your survey with a password so you can add questions or check up on user feedback later on.</label>
-        <input id="password" name='password' type="password" class="form__input--password @error('password') is-invalid @enderror">
+        <input id="password" name='password' type="password" value="{{old('password')}}"  class="form__input--password @error('password') is-invalid @enderror">
         <div class='form__input--show'>
             <input type="checkbox"  name='togglePass' onclick="showPassword()">
             <label id='togglePass' for="togglePass" class='form__label'>Show password.</label>   

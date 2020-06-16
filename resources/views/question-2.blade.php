@@ -8,13 +8,13 @@
             @csrf
 
             <label for="answer" class='form__label'>You can give the users some more info after they answer correctly.</label>
-            <input id="answer" name='answer' type="text" class="form__input--text @error('answer') is-invalid @enderror">
+            <input id="answer" name='answer' value="{{old('answer')}}" type="text" class="form__input--text @error('answer') is-invalid @enderror">
             @error('answer')
                 <div class='form__error'>{{ $message }}</div>
             @enderror
 
             <label for="tip" class='form__label'>Adding unlockable tips can help give the user more information about your subject. (optional)</label>
-            <input id="tip" name='tip' type="text" class="form__input--text @error('tip') is-invalid @enderror">
+            <input id="tip" name='tip' value="{{old('tip')}}" type="text" class="form__input--text @error('tip') is-invalid @enderror">
             @error('tip')
                 <div class='form__error'>{{ $message }}</div>
             @enderror
