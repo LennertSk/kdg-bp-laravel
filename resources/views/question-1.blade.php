@@ -40,6 +40,7 @@
     function getUrlOutput() {
         var str = document.getElementById("url").value
         str = str.replace(/\s+/g, '-').toLowerCase()
+        str = str.replace(/[&\/\\#, +()$~%.'":*?<>{},.!?;:'-]/g, '')
         document.getElementById('url-output').textContent = str
         document.getElementById('url-input').value = str
     }
